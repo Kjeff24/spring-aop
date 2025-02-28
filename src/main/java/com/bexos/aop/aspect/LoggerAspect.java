@@ -17,7 +17,7 @@ public class LoggerAspect {
 
     @Before("execution(* com.bexos.aop.service.UserService.addUser(..))")
     public void beforeAdvice() {
-        System.out.println("AOP BEFORE");
+        System.out.println("[BEFORE] Method execution started");
     }
 
     @After("serviceMethods()")
